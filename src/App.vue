@@ -1,6 +1,7 @@
 <template lang="html">
 <div>
 <h1>Countries</h1>
+<country-detail :country='selectedCountry'></country-detail>
 <countries-list :countries='countries'></countries-list>
 </div> 
 </template>
@@ -29,7 +30,8 @@ export default {
     })
   },
   components: {
-    "countries-list": CountriesList
+    "countries-list": CountriesList,
+    "country-detail": CountryDetail
   }
 
 }
