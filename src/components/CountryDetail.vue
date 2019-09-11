@@ -4,18 +4,15 @@
     <p>{{ country.capital }}</p>
     <p>{{ country.population }}</p>
 
-</article>
-  
+</article>  
 </template>
 
 <script>
 export default {
-    name: 'country-detail',
-    props: ['country']
-
-}
+  name: "country-detail",
+  props: ["country"]
+};
 </script>
 
-<style lang='css'>
-
+<style lang='css' scoped>
 </style>
